@@ -25,7 +25,7 @@ def add_1(a_number):
     This is an example function to get you started. 
     Run the tests now and this one should go green. Free marks!
     """
-    the_answer = a_number + 1
+   a_number = a_number + 1
 
     return the_answer
 
@@ -91,7 +91,7 @@ def shout_with_a_number(a_string, a_number):
 
     HINT: Lookup how to cast a_number to a string or lookup how to use string formatting in python
     """
-    the_answer = None
+    the_answer = 'string', 22
 
     return the_answer
 

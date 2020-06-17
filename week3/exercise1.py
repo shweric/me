@@ -12,6 +12,14 @@ def loop_ranger(start, stop=None, step=1):
     The look up the docs for range(), you can answer this with just the range 
     function, but we'd like you to do it the long way, probably using a loop.
     """
+
+    x = start
+    the numbers = []
+    while x < stop:
+        print(x)
+        the_numbers.append(x)
+        y = y + step 
+    
     return None
 
 
@@ -20,7 +28,9 @@ def lone_ranger(start, stop, step):
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    return None
+    list [range(0,2,1)]
+
+    return range(start, stop, step)
 
 
 def two_step_ranger(start, stop):
