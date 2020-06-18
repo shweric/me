@@ -25,9 +25,9 @@ def add_1(a_number):
     This is an example function to get you started. 
     Run the tests now and this one should go green. Free marks!
     """
-   the_answer = a_number + [1]
+    the_answer = a_number + 1
 
-    return 
+    return the_answer
 
 
 def add_5(a_number):
