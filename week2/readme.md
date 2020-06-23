@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+still a lot to catchup. The videos on the sight for explaining how to do the exercise are great! It sur helpd me a lot. Howver the errors are not in my favour at all.
