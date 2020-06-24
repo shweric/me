@@ -68,7 +68,7 @@ def shout(a_string):
     """
     # str = "you've"
     # str.isupper("you've")
-    the_answer = print "str.isupper(a_string)"
+    the_answer = str.upper(a_string)
 
     return the_answer
 
@@ -80,7 +80,7 @@ def really_shout(a_string):
     from above.
     Look up how to 'concatinate' strings to make this happen.
     """
-    the_answer = a_sting
+    the_answer = str.upper(a_string + "!")
 
     return the_answer
 
@@ -93,7 +93,8 @@ def shout_with_a_number(a_string, a_number):
 
     HINT: Lookup how to cast a_number to a string or lookup how to use string formatting in python
     """
-    the_answer = 'string', 22
+
+    the_answer = str.upper(a_string) + str.(a_number)
 
     return the_answer
 
