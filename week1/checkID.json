@@ -13,11 +13,11 @@
         "Darwin",
         "15MBP-EWS.local",
         "19.6.0",
-        "Darwin Kernel Version 19.6.0: Sun May 17 22:15:23 PDT 2020; root:xnu-6153.140.21~10/RELEASE_X86_64",
+        "Darwin Kernel Version 19.6.0: Mon Jun  1 21:41:50 PDT 2020; root:xnu-6153.140.27.0.1~11/RELEASE_X86_64",
         "x86_64",
         "i386"
     ],
-    "version": "Darwin Kernel Version 19.6.0: Sun May 17 22:15:23 PDT 2020; root:xnu-6153.140.21~10/RELEASE_X86_64",
+    "version": "Darwin Kernel Version 19.6.0: Mon Jun  1 21:41:50 PDT 2020; root:xnu-6153.140.27.0.1~11/RELEASE_X86_64",
     "python_build": [
         "default",
         "Jan  8 2020 13:42:34"
