@@ -1,0 +1,12 @@
+colorama
+datetime
+flake8
+func-timeout
+gitpython
+importlib
+mock
+pandas
+pathlib
+requests
+ruamel.yaml
+# This is everything that I think is needed for the first few weeks.
