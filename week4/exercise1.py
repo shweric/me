@@ -43,7 +43,7 @@ def wordy_pyramid():
     """Make a pyramid out of real words.
 
     There is a random word generator here:
-    http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength=10&maxLength=10&limit=1
+    https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word
     The arguments that the generator takes is the minLength and maxLength of the word
     as well as the limit, which is the the number of words. 
     Visit the above link as an example.
