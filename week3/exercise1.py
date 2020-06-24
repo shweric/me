@@ -59,7 +59,7 @@ def stubborn_asker(low, high):
 
     Look up the docs for input
     """
-    x = (int(raw_input))
+    x = (int(input))
     for value in x
         if x > 8
         print(low)
@@ -68,7 +68,7 @@ def stubborn_asker(low, high):
         else expression:
             pass
 
-    return x = (int(raw_input))
+    return x = (int(input))
     for value in x
         if x > 8
         print(low)

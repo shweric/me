@@ -15,7 +15,7 @@ def binary_search(low, high, actual_number):
     
     Each guess, print what the guess is. Then when you find the number return
     the number of guesses it took to get there and the actual number
-    as a dictionary. make sure that it has exactly these keys:
+    as a dictionary. make sure that it has exactlyese keys:
     {"guess": guess, "tries": tries}
     
     This will be quite hard, especially hard if you don't have a good diagram!
