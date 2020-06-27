@@ -14,7 +14,7 @@ def is_odd(a_number):
     #    else
     #        print"even"
 
-    return (a_number % 2) != 0
+    return a_number % 2 == 0
 
 
 
@@ -56,8 +56,8 @@ def loops_1a():
     star_list = []
     for i in range(10):
         star_list.append("*")
+    print(star_list)
     return star_list
-
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -148,7 +148,12 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    number_sq = []
+    for x in range(10):
+        number_sq.append(range(10))
+
+    return number_sq
+
 
 
 def loops_5():
@@ -175,7 +180,15 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    number_sq = []
+        for i in range(10):
+            jrow =[]
+            for j in range(5):
+                jrow.append('(i{0}, j{1})'.format(i,j)
+            number_sq.append(jrow)
+    print(number_sq)
+
+    return number_sq
 
 
 def loops_6():
@@ -198,7 +211,14 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    wedge = []
+        for i in range(10):
+            row =[]
+            for j in range(i + 1):
+                row.append(j)
+            wedge.append(row)
+    print(wedge)
+    return wedge
 
 
 def loops_7():
@@ -222,7 +242,14 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+     triangle = []
+        for i in range(10):
+            trow =[]
+            for j in range(5):
+                if i - 4 = 1
+                trow.append(*)
+    print(triangle)
+    return triangle
 
 
 def lp(some_kind_of_list, exercise_name):
