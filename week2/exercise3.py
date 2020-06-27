@@ -72,7 +72,6 @@ def loops_1c(number_of_items=5, symbol="#"):
     hash = []
     for i in range(number_of_items):
         hash.append(symbol)
-    print(hash)
     return hash
 
 
@@ -96,10 +95,9 @@ def loops_2():
     """
         star_line = []
         for x in range(10):
-            for y in range(10):
-                star_line.append("*")
+            star_line.append(loops_1c(number_of_items=10, symbol="*"))
 
-    return star_list * 10
+    return star_list
 
 
 
@@ -124,7 +122,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    number_sq = []
+        for x in range(10):
+            row =[]
+            for y in range(10):
+                row.append(str(x))
+            number_sq.append(row)
+
+    return number_sq
 
 
 def loops_4():
