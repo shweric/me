@@ -34,7 +34,16 @@ def fix_it(moves=True, should_move=True):
     As an extra challenge, see if you can get that down to three.
     """
 
-    return None
+    if moves == should_move:
+        return "No Problem"
+    elif moves and not should_move:
+        return "Duct Tape"
+    elif not moves and should_move:
+        return "WD-40"
+    else:
+        return "something is wrong here mate"
+
+
 
 
 def loops_1a():
@@ -44,7 +53,12 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+
+    star_list = []
+    for i in range(10):
+        star_list.append("*")
+    return star_list
+
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -54,7 +68,12 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    return None
+
+    hash = []
+    for i in range(number_of_items):
+        hash.append(symbol)
+    print(hash)
+    return hash
 
 
 def loops_2():
@@ -75,7 +94,13 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+        star_line = []
+        for x in range(10):
+            for y in range(10):
+                star_line.append("*")
+
+    return star_list * 10
+
 
 
 def loops_3():
