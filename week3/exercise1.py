@@ -13,7 +13,7 @@ def loop_ranger(start, stop=None, step=1):
     function, but we'd like you to do it the long way, probably using a loop.
     """
     
-   list[ range (0, none, 1)]
+   list(range (1, 10, 2))
 #    x = start
 #    the numbers = []
 #     while x < stop:
@@ -28,16 +28,18 @@ def loop_ranger(start, stop=None, step=1):
 #         the_numbers.append(x)
 #         y = y + step 
     
-    return list[ range (0, none, 1)]
+    loop_list = range(start, stop, step)
+
+    return loop_list
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    list [range(0,2,1)]
+    lone_list = list [range(0,2,1)]
 
-    return range(start, stop, step)
+    return lone_list
 
 
 def two_step_ranger(start, stop):

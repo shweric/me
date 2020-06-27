@@ -20,7 +20,6 @@ def is_odd(a_number):
 
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
-
     Using the engineering flowchart (in week2 folder of the CODE1161-2019
     repo engineeringFlowchart.png) for the rules, return the apropriate
     response to the input parameters.
