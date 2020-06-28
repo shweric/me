@@ -27,9 +27,10 @@ def loop_ranger(start, stop=None, step=1):
 #         print(x)
 #         the_numbers.append(x)
 #         y = y + step 
-#   loop_list = range(start, stop, step)
+    loop_list = range(start, stop, step)
+    print(loop_ranger)
 
-    return range(start, stop, step)
+    return loop_list
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
