@@ -13,7 +13,7 @@ def loop_ranger(start, stop=None, step=1):
     function, but we'd like you to do it the long way, probably using a loop.
     """
     
-   list(range (1, 10, 2))
+#   list(range (1, 10, 2))
 #    x = start
 #    the numbers = []
 #     while x < stop:
@@ -27,10 +27,9 @@ def loop_ranger(start, stop=None, step=1):
 #         print(x)
 #         the_numbers.append(x)
 #         y = y + step 
-    
-    loop_list = range(start, stop, step)
+#   loop_list = range(start, stop, step)
 
-    return loop_list
+    return range(start, stop, step)
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
@@ -61,23 +60,24 @@ def stubborn_asker(low, high):
 
     Look up the docs for input
     """
-    x = (int(input))
-    for value in x
-        if x > 8
-        print(low)
-        elif x < 8
-        print(high)
-        else expression:
-            pass
+#    x = (int(input))
+#    for value in x
+#        if x > 8
+#        print(low)
+#        elif x < 8
+#        print(high)
+#        else expression:
+#            pass
+#
+#    return x = (int(input))
+#    for value in x
+#        if x > 8
+#        print(low)
+#        elif x < 8
+#        print(high)
+#        else expression:
 
-    return x = (int(input))
-    for value in x
-        if x > 8
-        print(low)
-        elif x < 8
-        print(high)
-        else expression:
-            pass
+    return none
 
 
 def not_number_rejector(message):
