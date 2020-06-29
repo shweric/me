@@ -91,9 +91,9 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-        star_line = []
-        for x in range(10):
-            star_line.append(loops_1c(number_of_items=10, symbol="*"))
+    star_line = []
+    for x in range(10):
+        star_line.append(loops_1c(number_of_items=10, symbol="*"))
 
     return star_list
 

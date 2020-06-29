@@ -13,7 +13,7 @@ def loop_ranger(start, stop=None, step=1):
     function, but we'd like you to do it the long way, probably using a loop.
     """
     
-#   list(range (1, 10, 2))
+#   list(range (1, 10, 2)) 
 #    x = start
 #    the numbers = []
 #     while x < stop:
