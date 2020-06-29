@@ -14,7 +14,7 @@ def is_odd(a_number):
     #    else
     #        print"even"
 
-    return a_number % 2 == 0
+    return a_number % 2 != 0
 
 
 
@@ -95,7 +95,7 @@ def loops_2():
     for x in range(10):
         star_line.append(loops_1c(number_of_items=10, symbol="*"))
 
-    return star_list
+    return star_line
 
 
 
@@ -121,11 +121,11 @@ def loops_3():
          so call str(number) to cast.
     """
     number_sq = []
-        for x in range(10):
-            row =[]
-            for y in range(10):
-                row.append(str(x))
-            number_sq.append(row)
+    for x in range(10):
+        row =[]
+        for y in range(10):
+            row.append(str(x))
+        number_sq.append(row)
 
     return number_sq
 
@@ -147,11 +147,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    number_sq = []
-    for x in range(10):
-        number_sq.append(range(10))
-
-    return number_sq
+    num_sq = []
+    for i in range(10): 
+        num_row = []
+        for j in range(10):
+            num_row.append(str(j))
+        num_sq.append(num_row)
+    return num_sq
 
 
 
@@ -179,15 +181,14 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    number_sq = []
-        for i in range(10):
-            jrow =[]
-            for j in range(5):
-                jrow.append('(i{0}, j{1})'.format(i,j)
-            number_sq.append(jrow)
-    print(number_sq)
+    s = []
+    for i in range(10):
+        jrow =[]
+        for j in range(5):
+            jrow.append('(i{0}, j{1})'.format(i,j))
+        s.append(jrow)
 
-    return number_sq
+    return s
 
 
 def loops_6():
@@ -211,11 +212,11 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     wedge = []
-        for i in range(10):
-            row =[]
-            for j in range(i + 1):
-                row.append(j)
-            wedge.append(row)
+    for i in range(10):
+        row =[]
+        for j in range(i + 1):
+            row.append(str(j))
+        wedge.append(row)
     print(wedge)
     return wedge
 
@@ -241,13 +242,15 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-     triangle = []
-        for i in range(10):
-            trow =[]
-            for j in range(5):
-                if i - 4 = 1
-                trow.append(*)
-    print(triangle)
+    triangle = []
+    for i in range(5):
+        trow =[]
+        for j in range(9):
+            if abs(j - 4) <= i:
+                trow.append("*")
+            else:
+                trow.append(' ')
+        triangle.append(trow)
     return triangle
 
 
