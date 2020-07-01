@@ -12,24 +12,9 @@ def loop_ranger(start, stop=None, step=1):
     The look up the docs for range(), you can answer this with just the range 
     function, but we'd like you to do it the long way, probably using a loop.
     """
-    
-#   list(range (1, 10, 2)) 
-#    x = start
-#    the numbers = []
-#     while x < stop:
-#         print(x)
-#         the_numbers.append(x)
-#         y = y + step 
-
-#     x = start
-#     the numbers = []
-#     for x < stop:
-#         print(x)
-#         the_numbers.append(x)
-#         y = y + step 
     loop_list = range(start, stop, step)
-    print(loop_ranger)
-
+    for x in loop_list:
+        list(loop_list)
     return loop_list
 
 def lone_ranger(start, stop, step):
@@ -37,10 +22,9 @@ def lone_ranger(start, stop, step):
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    lone_list = list [range(0,2,1)]
+    #lone_list = list [range(0,2,1)]
 
-    return lone_list
-
+    return None
 
 def two_step_ranger(start, stop):
     """Make a range that steps by 2.
@@ -48,9 +32,9 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    list [range(0,2,2)]
+    #list [range(0,2,2)]
 
-    return list [range(0,2,2)]
+    return None #list [range(0,2,2)]
 
 
 def stubborn_asker(low, high):
