@@ -12,19 +12,24 @@ def loop_ranger(start, stop=None, step=1):
     The look up the docs for range(), you can answer this with just the range 
     function, but we'd like you to do it the long way, probably using a loop.
     """
-    loop_ranger = range(start, stop, step)
+    the_numbers = []
+    x = start
+    while x < stop:
+        print(x)
+        the_numbers.append(x)
+        x = x + step
+    #loop_ranger = list(range(start, None, 1))
     #for x in loop_list:
     #    list(loop_list)
-    return None
+    return the_numbers
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    lone_list = list [range(0,2,1)]
-
-    return None
+    
+    return range(start, stop, step)
 
 def two_step_ranger(start, stop):
     """Make a range that steps by 2.
