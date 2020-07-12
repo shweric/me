@@ -12,17 +12,17 @@ def loop_ranger(start, stop=None, step=1):
     The look up the docs for range(), you can answer this with just the range 
     function, but we'd like you to do it the long way, probably using a loop.
     """
-    loop_list = range(start, stop, step)
-    for x in loop_list:
-        list(loop_list)
-    return loop_list
+    loop_ranger = range(start, stop, step)
+    #for x in loop_list:
+    #    list(loop_list)
+    return None
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    #lone_list = list [range(0,2,1)]
+    lone_list = list [range(0,2,1)]
 
     return None
 
@@ -62,7 +62,7 @@ def stubborn_asker(low, high):
 #        print(high)
 #        else expression:
 
-    return none
+    return None
 
 
 def not_number_rejector(message):

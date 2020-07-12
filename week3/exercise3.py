@@ -39,7 +39,7 @@ def GuessingGame():
     upperBound = int(upperBound)
     lowerBound = int(lowerBound)
 
-    actualNumber = random.randint(0, upperBound)
+    actualNumber = random.randint(lowerBound, upperBound)
 
     guessed = False
 
