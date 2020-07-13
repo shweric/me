@@ -28,7 +28,6 @@ def lone_ranger(start, stop, step):
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    
     return range(start, stop, step)
 
 def two_step_ranger(start, stop):
@@ -37,9 +36,8 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    #list [range(0,2,2)]
 
-    return None #list [range(0,2,2)]
+    return range(start, stop, 2)
 
 
 def stubborn_asker(low, high):
@@ -50,24 +48,27 @@ def stubborn_asker(low, high):
 
     Look up the docs for input
     """
-#    x = (int(input))
-#    for value in x
-#        if x > 8
+    stub_ask = []
+    x = (int(input))
+    for value in x:
+        if x > low:
+            print(go higher)
+        elif x < high:
+            print(go lower)
+        else:
+            pass
+
+#    return x = (int(input))
+#    for value in x:
+#        if x > 8:
 #        print(low)
-#        elif x < 8
+#        elif x < 8:
 #        print(high)
 #        else expression:
 #            pass
-#
-#    return x = (int(input))
-#    for value in x
-#        if x > 8
-#        print(low)
-#        elif x < 8
-#        print(high)
-#        else expression:
 
-    return None
+
+    return stub_ask
 
 
 def not_number_rejector(message):
@@ -77,6 +78,9 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
+
+
+    
     return None
 
 
