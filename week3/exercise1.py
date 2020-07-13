@@ -28,7 +28,7 @@ def lone_ranger(start, stop, step):
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    return range(start, stop, step)
+    return list(range(start, stop, step))
 
 def two_step_ranger(start, stop):
     """Make a range that steps by 2.
@@ -37,7 +37,7 @@ def two_step_ranger(start, stop):
     Make a range function that always has a step size of 2
     """
 
-    return range(start, stop, 2)
+    return list(range(start, stop, 2))
 
 
 def stubborn_asker(low, high):
@@ -48,27 +48,16 @@ def stubborn_asker(low, high):
 
     Look up the docs for input
     """
-    stub_ask = []
-    x = (int(input))
-    for value in x:
-        if x > low:
-            print(go higher)
-        elif x < high:
-            print(go lower)
+
+    while True:
+        x = int(input("give me a number")) 
+        if x < low:
+            print("go higher")
+        elif x > high:
+            print("go lower")
         else:
-            pass
+            return x
 
-#    return x = (int(input))
-#    for value in x:
-#        if x > 8:
-#        print(low)
-#        elif x < 8:
-#        print(high)
-#        else expression:
-#            pass
-
-
-    return stub_ask
 
 
 def not_number_rejector(message):
@@ -80,7 +69,7 @@ def not_number_rejector(message):
     """
 
 
-    
+
     return None
 
 

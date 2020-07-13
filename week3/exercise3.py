@@ -29,13 +29,13 @@ def advancedGuessingGame():
 import random
 
 
-def GuessingGame():
+def exampleGuessingGame():
     
     print("\nWelcome to the guessing game!")
     print("A number between a lower bound and a upper bound ?")
     upperBound = input("Enter an upper bound: ")
     lowerBound = input("Enter an lower bound: ")
-    print("OK then, a number between {} ".format(lowerBound) " and {} ?".format(upperBound), )
+    print(f"OK then, a number between {lowerBound} and {upperBound} ?")
     upperBound = int(upperBound)
     lowerBound = int(lowerBound)
 
@@ -56,14 +56,8 @@ def GuessingGame():
         else:
             print("Too big, try again :'(")
     return "You got it!"
-
+    # the tests are looking for the exact string "You got it!". Don't modify that!
 
 if __name__ == "__main__":
     exampleGuessingGame()
 
-    return "You got it!"
-    # the tests are looking for the exact string "You got it!". Don't modify that!
-
-
-if __name__ == "__main__":
-    print(advancedGuessingGame())
