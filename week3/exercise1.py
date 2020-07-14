@@ -50,7 +50,8 @@ def stubborn_asker(low, high):
     """
 
     while True:
-        x = int(input("give me a number")) 
+        user_input = input("give me a number")
+        x = int(user_input) 
         if x < low:
             print("go higher")
         elif x > high:
@@ -67,11 +68,15 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
+    while True:
+        try:
+            x = input(message)
+            a_number = int(x)
+            return a_number
+        except Exception as e:
+            print("that's not a number", e)
 
-
-
-    return None
-
+  
 
 def super_asker(low, high):
     """Robust asking function.
@@ -81,6 +86,21 @@ def super_asker(low, high):
     Try to call at least one of the other functions to minimise the
     amount of code.
     """
+    # while True:
+    #     try:
+    #         x = input("give me a number")
+    #         break
+    #     except ValueError:
+    #         print(message)
+    # return x
+      
+    # while True:
+    #     x = int(input("give me a number")) 
+    #     if x < low:
+    #         print("go higher")
+    #     elif x > high:
+    #         print("go lower")
+    #     else:
     return None
 
 
@@ -98,5 +118,4 @@ if __name__ == "__main__":
     stubborn_asker(30, 45)
     print("\nnot_number_rejector")
     not_number_rejector("Enter a number: ")
-    print("\nsuper_asker")
     super_asker(33, 42)
