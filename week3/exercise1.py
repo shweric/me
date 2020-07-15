@@ -86,22 +86,20 @@ def super_asker(low, high):
     Try to call at least one of the other functions to minimise the
     amount of code.
     """
-    # while True:
-    #     try:
-    #         x = input("give me a number")
-    #         break
-    #     except ValueError:
-    #         print(message)
-    # return x
-      
-    # while True:
-    #     x = int(input("give me a number")) 
-    #     if x < low:
-    #         print("go higher")
-    #     elif x > high:
-    #         print("go lower")
-    #     else:
-    return None
+    while True:
+        try:
+            x = input("Give me a number: ")
+            a_number = int(x)
+            if a_number < low:
+                print("go higher")
+            elif a_number > high:
+                print("go lower")
+            else:
+                return a_number
+        except Exception as e:
+            print("that's not a number", e)
+
+        
 
 
 if __name__ == "__main__":
