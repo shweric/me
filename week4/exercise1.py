@@ -36,9 +36,11 @@ def get_some_details():
     json_data = open("/Volumes/EWS/Cloud/G_UTS/Academic/AU/UNSW/Y2T2/CODE1161/me/week4/lazyduck.json").read()
 
     data = json.loads(json_data)
-    print(data)
-    for last in data['results']:
-        return {"lastName": ['last'], "password": ['pasword'], "postcodePlusID": ['postcode'+ 'id']}
+    lastname = data["results"][0]["name"]["last"]
+    pw = data["results"][0]["login"]["password"]
+    pcid = int(data["results"][0]["location"]["postcode"]) + int(data["results"][0]["id"]["value"])
+
+    return {"lastName": lastname, "password": pw, "postcodePlusID": pcid}
 
 
 def wordy_pyramid():
@@ -76,7 +78,8 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
-    pass
+    r = requests.get(https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=20)
+
 
 
 def pokedex(low=1, high=5):
