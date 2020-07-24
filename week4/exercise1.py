@@ -33,10 +33,12 @@ def get_some_details():
          dictionary, you'll need integer indeces for lists, and named keys for
          dictionaries.
     """
-    json_data = open(LOCAL + "/lazyduck.json").read()
+    json_data = open("/Volumes/EWS/Cloud/G_UTS/Academic/AU/UNSW/Y2T2/CODE1161/me/week4/lazyduck.json").read()
 
     data = json.loads(json_data)
-    return {"lastName": None, "password": None, "postcodePlusID": None}
+    print(data)
+    for last in data['results']:
+        return {"lastName": ['last'], "password": ['pasword'], "postcodePlusID": ['postcode'+ 'id']}
 
 
 def wordy_pyramid():

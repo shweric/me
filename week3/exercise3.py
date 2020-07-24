@@ -33,13 +33,6 @@ def exampleGuessingGame():
     
     print("\nWelcome to the guessing game!")
     print("A number between a lower bound and a upper bound ?")
-    while True:
-        try:
-            upperBound = input("Enter an upper bound: ")
-            break
-        except Exception as e:
-            print("that's not a number", e)
-    upperBound = int(upperBound)
     
     while True:
         try:
@@ -48,9 +41,24 @@ def exampleGuessingGame():
         except Exception as e:
             print("that's not a number", e)
     lowerBound = int(lowerBound)
+    
+    while True:
+        try:
+            upperBound = input("Enter an upper bound: ")
+            break
+        except Exception as e:
+            print("that's not a number", e)
+    upperBound = int(upperBound)
+
     print(f"OK then, a number between {lowerBound} and {upperBound} ?")
 
-    actualNumber = random.randint(lowerBound, upperBound)
+    while True:
+        try:
+            actualNumber = random.randint(lowerBound, upperBound)
+            break
+        except Exception as e:
+            actualNumber = random.randint(upperBound, lowerBound)
+            break
 
     guessed = False
 
@@ -71,4 +79,5 @@ def exampleGuessingGame():
 
 if __name__ == "__main__":
     exampleGuessingGame()
+
 
