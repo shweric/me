@@ -78,7 +78,12 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
-    r = requests.get(https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=20)
+    #r = requests.get(https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=[20])
+    word_pyramid = []
+    for i in range(3,20,2):
+        word_pyramid.append(r = requests.get('https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=[' + str(i) + ']'))
+    print(word_pyramid)
+    return word_pyramid
 
 
 
