@@ -80,9 +80,16 @@ def wordy_pyramid():
     """
     #r = requests.get(https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=[20])
     word_pyramid = []
-    for i in range(3,20,2):
-        word_pyramid.append(r = requests.get('https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=[' + str(i) + ']'))
-    print(word_pyramid)
+    a = 3
+    for a in range(3,20,2):
+        r = requests.get(f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={a}")
+        print(r.text)
+        word_pyramid.append(r.text)
+    for a in reversed(range(4,22,2)):
+        r = requests.get(f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={a}")
+        print(r.text)
+        word_pyramid.append(r.text)
+
     return word_pyramid
 
 

@@ -6,6 +6,22 @@ Steps on the way to making your own guessing game.
 import random
 
 
+def not_number_rejector(message):
+    """Ask for a number repeatedly until actually given one.
+
+    Ask for a number, and if the response is actually NOT a number 
+    (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
+    When you do get a number, return it.
+    """
+    while True:
+        try:
+            x = input(message)
+            a_number = int(x)
+            return a_number
+        except Exception as e:
+            print("that's not a number", e)
+
+
 def advancedGuessingGame():
     """Play a guessing game with a user.
 
@@ -26,39 +42,23 @@ def advancedGuessingGame():
     purpose if you can!
     """
 
-import random
-
-
-def exampleGuessingGame():
-    
     print("\nWelcome to the guessing game!")
-    print("A number between a lower bound and a upper bound ?")
-    
+    print("Guess a number between a lower bound and a upper bound !")
+
+    lowerBound = not_number_rejector("Enter an lower bound: ")
     while True:
-        try:
-            lowerBound = input("Enter an lower bound: ")
+        upperBound = not_number_rejector("Enter an upper bound: ")
+
+        if (
+            (lowerBound != upperBound)
+            and (lowerBound < upperBound)
+            and (upperBound != lowerBound + 1)
+        ):
             break
-        except Exception as e:
-            print("that's not a number", e)
-    lowerBound = int(lowerBound)
-    
-    while True:
-        try:
-            upperBound = input("Enter an upper bound: ")
-            break
-        except Exception as e:
-            print("that's not a number", e)
-    upperBound = int(upperBound)
 
     print(f"OK then, a number between {lowerBound} and {upperBound} ?")
 
-    while True:
-        try:
-            actualNumber = random.randint(lowerBound, upperBound)
-            break
-        except Exception as e:
-            actualNumber = random.randint(upperBound, lowerBound)
-            break
+    actualNumber = random.randint(lowerBound, upperBound)
 
     guessed = False
 
@@ -77,7 +77,7 @@ def exampleGuessingGame():
     return "You got it!"
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
-if __name__ == "__main__":
-    exampleGuessingGame()
 
+if __name__ == "__main__":
+    advancedGuessingGame()
 
