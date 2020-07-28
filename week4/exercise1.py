@@ -155,11 +155,12 @@ def diarist():
             numcount += 1
     print(numcount)
 
-    writemode = "k"
-    writefilep = LOCAL + "/lasers.pew"
+    writemode = 'k'
+    writefilep = LOCAL + "/laser.pew"
     lasers = open(writefilep, writemode)
     lasers.write(str(numcount))
     lasers.close()
+
 
 if __name__ == "__main__":
     functions = [
