@@ -124,9 +124,9 @@ def pokedex(low=1, high=5):
         h = p["height"]
         if h > max:
             h = max
-        name = p["name"]
-        weight = p["weight"]
-        height = p["height"]
+            name = p["name"]
+            weight = p["weight"]
+            height = p["height"]
 
     return {"name": name, "weight": weight, "height": height}
 
@@ -155,7 +155,7 @@ def diarist():
             numcount += 1
     print(numcount)
 
-    writemode = 'k'
+    writemode = "k"
     writefilep = LOCAL + "/lasers.pew"
     lasers = open(writefilep, writemode)
     lasers.write(str(numcount))
