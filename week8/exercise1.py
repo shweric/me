@@ -27,7 +27,7 @@ def dictionary_please() -> dict:
 
 def is_it_5(some_number) -> bool:
     """Returns True if the argument passed is 5, otherwise returns False."""
-    if bool == 5:
+    if some_number == 5:
         well_is_it = True
     else:
         well_is_it = False
@@ -100,6 +100,18 @@ def fizz_buzz():
          'FizzBuzz', 16, 17, ...]
     """
     fizzBuzzList = []
+    
+    # while True:
+    for a in range(1,101):
+        if (a%3 == 0) and (a%5 == 0):
+            fizzBuzzList.append("FizzBuzz")
+        elif a%3 == 0:
+            fizzBuzzList.append("Fizz")
+        elif a%5 == 0:
+            fizzBuzzList.append("Buzz")
+        else:
+            fizzBuzzList.append(a)
+    return fizzBuzzList
     # your code here
 
     return fizzBuzzList
@@ -115,8 +127,14 @@ def put_behind_bars(input_string="very naughty boy"):
     TIP: consider using the 'join' method in Python.
     TIP: make sure that you have a pipe on both ends of the string.
     """
+    
 
-    return None
+    # for c in input_string:
+    #     if type(c) == string:
+    #         pbb.append("|")
+    #     else:
+    #         pbb.append("c")
+    return ("|" + "|".join(list(input_string)) + "|")
 
 
 def pet_filter(letter="a"):
@@ -134,6 +152,9 @@ def pet_filter(letter="a"):
     # fmt: on
     filtered = []
 
+    for word in pets:
+        if letter in word:
+            filtered.append(word)
     return filtered
 
 
@@ -145,8 +166,13 @@ def best_letter_for_pets():
     import string
 
     the_alphabet = string.ascii_lowercase
+    longest_letter = 0
     popular_letter = ""
-
+    for letter in the_alphabet:
+            l = len(pet_filter(letter))
+            if l > longest_letter:
+                longest_letter = l
+                popular_letter = letter
     return popular_letter
 
 
@@ -179,6 +205,11 @@ def make_filler_text_dictionary():
 
     url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength="
     wd = {}
+    for a in range(3, 8):
+        wd[a] = []
+        for _ in range(3):
+            r = requests.get(url + str(a))
+            wd[a].append(r.text)
 
     return wd
 
@@ -193,9 +224,15 @@ def random_filler_text(number_of_words=200):
     TIP: you'll need the random library, 
         see line 77 of week4/hangman_leadboard.py for an example.
     """
+
     import random
 
     my_dict = make_filler_text_dictionary()
+    words = []
+    for word in range(number_of_words):
+        length = random.randint(3, 6)
+        index = random.randint(0, 2)
+        words.append(my_dict[length][index])
 
     return " ".join(words)
 
@@ -217,7 +254,7 @@ def fast_filler(number_of_words=200):
     import os
     import json
 
-    fname = "dict_racey.json"
+
 
     return None
 
