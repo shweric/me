@@ -7,7 +7,7 @@ You have 2 hours.
 """
 import string
 import time
-from typing import NewType
+from typing import Counter, NewType
 
 
 def string_please() -> str:
@@ -38,7 +38,7 @@ def is_it_5(some_number) -> bool:
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
     try:
-        int(new) = int(some_number) - 5
+        new = int(some_number) - 5
     except some_number == 5:
         some_number == 4
         new = int(some_number) - 5
@@ -60,16 +60,27 @@ def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 5
     """
+    count = 0
 
-    return count
+    while True:
+        for a in input_list:
+            if a == 3:
+                count = count + 1
+        return count
 
 
 def n_counter(search_for_this, input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
     """Count the number of times search_for_this shows up in the input_list.
     Return an integer.
     """
+    count = 0
 
-    return count
+    while True:
+        for a in input_list:
+            if a == search_for_this:
+                count = count + 1
+        return count
+
 
 
 def fizz_buzz():
