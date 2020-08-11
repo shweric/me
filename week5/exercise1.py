@@ -102,13 +102,13 @@ def calculate_aspect(base, height):
 # Don't reinvent the wheel
 def get_triangle_facts(base, height, units="mm"):
     return {
-        "area": None,
-        "perimeter": None,
-        "height": None,
-        "base": None,
-        "hypotenuse": None,
-        "aspect": None,
-        "units": None,
+        "area": calculate_area(base, height),
+        "aspect": calculate_aspect(base, height),
+        "base": base,
+        "height": height,
+        "hypotenuse": calculate_hypotenuse(base, height),
+        "perimeter": calculate_perimeter(base, height),
+        "units": units,
     }
 
 
