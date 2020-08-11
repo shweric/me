@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Imported more of the data in and getting familiarize. Composed most of the graphes. Realized that learning matplotlib is like another language. Also realised that Week 5 is supposedly handed in and I havent. Done it and hopefully it counts.
