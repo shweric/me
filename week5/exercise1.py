@@ -223,11 +223,11 @@ def get_a_word_of_length_n(length):
 
 
 def list_of_words_with_lengths(list_of_lengths):
-    # pyramid_list = []
-    # for i in list_of_lengths:
-    #     pyramid_list.append(get_a_word_of_length_n(i))
+    pyramid_list = []
+    for i in list_of_lengths:
+        pyramid_list.append(get_a_word_of_length_n(i))
 
-    # return pyramid_list
+    return pyramid_list
 
 
 if __name__ == "__main__":
